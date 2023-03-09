@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Tilt+Neon&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;;
+}
+nav{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height:80px;
+    background-color: black;
+}
+nav h1{
+    margin: 0 auto;
+    font-size: 2.5vw;
+    padding-top: 5px;
+}
+nav i{
+    padding: 10px;
+}
+.gamecontainer{
+    display: flex;
+    /* grid-template-columns: repeat(3); */
+    justify-content: center;
+    margin-top:50px
+
+}
+.line{
+    background-color: black;
+    height: 2px;
+    width:0;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+.container{
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    
+
+}
+.container div{
+    display: flex;
+    font-family: 'Tilt Neon', cursive;
+    border: solid black;
+    font-size: 8vw;
+    cursor : pointer;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: aquamarine;
+}
+.gameOver{
+    margin:auto auto;
+    justify-content: center;
+    align-items: center;
+    font-size:5vw ;
+    text-align: center;
+}
+.restart{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.restartbox{
+    cursor: pointer;
+    height: 5vw;
+    width: 19vw;
+    border: solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: aquamarine;
+}
+.restartbox h1{
+    margin-top: 0.5vwpx;
+    font-size: 4vw;
+}
+@media only screen and (max-width: 800px) {
+    .gamecontainer{
+        flex-wrap: wrap;
+
+    }
+  }
